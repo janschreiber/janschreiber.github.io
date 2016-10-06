@@ -1,16 +1,123 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-US">
 
 <head>
-  <meta charset="utf-8">
-  <title>Jan Schreiber's GitHub Page</title>
-  <meta name="description" content="Jan Schreiber's GitHub Page">
-  <meta name="author" content="Jan Schreiber">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jan Schreiber's Portfolio (flashy)</title>
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Special+Elite|Monoton" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet prefetch" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 </head>
 
 <body>
-  <p>Not much to see here yet, sorry!</p>
+    <div id="navbar">
+        <nav>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Hide nav menu">&times;</a>
+            <a href="#">Home</a> &middot;&nbsp;
+            <a href="#about">About</a> &middot;&nbsp;
+            <a href="#work">Recent Work</a> &middot;&nbsp;
+            <a href="#floss">Open Source Contributions</a> &middot;&nbsp;
+            <a href="#social_media">Social Media</a>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <div id="navicon">
+            <span class="fa" onclick="openNav()" title="Show nav menu">&#xf0c9;</span>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Jan<span style="letter-spacing:4px;"> </span>Schreiber&apos;s<span style="letter-spacing:4px;"> </span>Casebo<span style="letter-spacing:-0.2px;">o</span><span style="letter-spacing:2px;">k</span></h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="line-height:2em;margin-bottom:0px" id="about">About Me</h2>
+                <div id="description" style="padding:20px;max-width:400px;margin:0 auto;">
+                    <img src="http://fs5.directupload.net/images/151128/at5f2w9f.jpg" alt="Jan Schreiber's portrait, styled as a comic book character" style="float:right;margin-left:8px;margin-bottom:5px;width:120px;border:1px solid black" /> I&apos;m an aspiring JavaScript investigator based in Essen, Germany, and am hopefully going to earn my front-end development badge from <a href="http://www.freecodecamp.com" title="http://www.freecodecamp.com">freeCodeCamp</a> in a few weeks.
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="clear:both" id="work">Recently Solved Cases</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Mobster Pomodoro Clock</h3>
+                <a href="http://codepen.io/janschreiber/full/yYvJry" title="http://codepen.io/janschreiber/full/yYvJry" target="_blank"><img class="img-responsive thumbnail" src="http://fs5.directupload.net/images/151128/rlsodatk.png"></a>
+            </div>
+            <div class="col-md-4">
+                <h3>Quote of the Day Massacre</h3>
+                <a href="http://codepen.io/janschreiber/full/pjRmEN/" title="http://codepen.io/janschreiber/full/pjRmEN/" target="_blank"><img class="img-responsive thumbnail" src="http://fs5.directupload.net/images/151128/juhxn4nf.png"></a>
+            </div>
+            <div class="col-md-4">
+                <h3>The Wikipedia Search Fraud</h3>
+                <a href="http://codepen.io/janschreiber/full/qOLdxd/" title="http://codepen.io/janschreiber/full/qOLdxd/" target="_blank"><img class="img-responsive thumbnail" src="http://fs5.directupload.net/images/151128/islld8r2.png"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Twitch With an Itch</h3>
+                <a href="http://codepen.io/janschreiber/full/xEXJbr" title="http://codepen.io/janschreiber/full/xEXJbr" target="_blank"><img class="img-responsive thumbnail" src="img/twitch.png"></a>
+            </div>
+            <div class="col-md-4">
+                <h3>Dishonest Praise</h3>
+                <a href="http://codepen.io/janschreiber/full/LkZBNy" title="http://codepen.io/janschreiber/full/LkZBNy" target="_blank"><img class="img-responsive thumbnail" src="img/frege.png"></a>
+            </div>
+            <div class="col-md-4">
+                <h3>A Dangerous Game</h3>
+                <a href="http://codepen.io/janschreiber/full/JXegLO" title="http://codepen.io/janschreiber/full/JXegLO" target="_blank"><img class="img-responsive thumbnail" src="img/simon.png"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3>The Poisoned Calculator</h3>
+                <a href="http://codepen.io/janschreiber/full/dYNRpY/" title="http://codepen.io/janschreiber/full/dYNRpY/" target="_blank"><img class="img-responsive thumbnail" src="http://fs5.directupload.net/images/151128/u5auo9x8.png"></a>
+            </div>
+            <div class="col-md-4">
+                <h3>Unexpected Camper News</h3>
+                <a href="http://codepen.io/janschreiber/full/bVzmJo" title="http://codepen.io/janschreiber/full/bVzmJo" target="_blank"><img class="img-responsive thumbnail" src="http://fs5.directupload.net/images/151128/c468iddb.png"></a>
+            </div>
+            <div class="col-md-4">
+                <h3>A Weather Widget Gone Wild</h3>
+                <a href="http://codepen.io/janschreiber/full/Oyvpba/" title="http://codepen.io/janschreiber/full/Oyvpba/" target="_blank"><img class="img-responsive thumbnail" src="http://fs5.directupload.net/images/151128/79mi9oa2.png"></a>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top:20px">
+            <div class="col-md-12">
+                <h2 id="floss"><abbr title="Free/Libre Open Source Software">FLOSS</abbr> Projects I Have Worked On</h2>
+                <ul class="list">
+                    <li><a href="https://notepad-plus-plus.org" title="https://notepad-plus-plus.org" target="_blank">Notepad++</a> (Open Source code editor for Windows) &ndash; worked on the German UI translation in XML</li>
+                    <li><a href="https://languagetool.org" title="https://languagetool.org" target="_blank">LanguageTool</a> (Open Source grammar checker for more than twenty languages, with <a href="http://libreoffice.org" title="http://libreoffice.org" target="_blank">LibreOffice</a>/<a href="http://www.openoffice.org" title="http://www.openoffice.org" target="_blank">OpenOffice</a> extension) &ndash; worked on the German grammar rules (XML), software testing, maintaining the project's <a href="https://web.facebook.com/LanguageTool/" title="https://www.facebook.com/LanguageTool/" target="_blank">Facebook page</a></li>
+                    <li><a href="https://sourceforge.net/projects/germandict/" title="https://sourceforge.net/projects/germandict/" target="_blank">Free German Dictionary</a> (a German word list for <a href="http://aspell.net" title="http://aspell.net" target="_blank">GNU Aspell</a> with 1.8 million word forms) &ndash; my own SourceForge project</li>
+                    <li><a href="http://omni-bot.invisionzone.com" title="http://omni-bot.invisionzone.com" target="_blank">Omni-Bot</a> (a free bot for several FPS games) &ndash; map scripting in the <a href="http://www.gmscript.com" title="http://www.gmscript.com" target="_blank">GameMonkey</a> scripting language, waypointing, documentation on the Wiki, customized Notepad++ for Omni-Bot with syntax highlighting and autocompletion, user support in the forums (user name: <a href="http://omni-bot.invisionzone.com/index.php?/user/576-d00d/" title="http://omni-bot.invisionzone.com/index.php?/user/576-d00d/" target="_blank">d00d</a>)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" id="social_media" style="text-align:center">
+                <h2>Follow Me</h2>
+                <a href="http://www.freecodecamp.com/janschreiber" title="http://www.freecodecamp.com/janschreiber" class="fa">(&#xf06d;)</a>&nbsp;&nbsp;<a href="https://github.com/janschreiber" title="https://github.com/janschreiber" class="fa">&#xf09b;</a>&nbsp;&nbsp;<a href="https://de.wikipedia.org/wiki/Benutzer:Jan_Schreiber" title="https://de.wikipedia.org/wiki/Benutzer:Jan_Schreiber" class="fa">&#xf266;</a>&nbsp;&nbsp;<a href="https://de.linkedin.com/in/jan-schreiber-5159a910a" title="https://de.linkedin.com/in/jan-schreiber-5159a910a" class="fa">&#xf08c;</a>&nbsp;&nbsp;<a href="https://twitter.com/janschreiber" title="https://twitter.com/janschreiber" class="fa">&#xf099;</a>&nbsp;&nbsp;<a href="https://web.facebook.com/schreiber.jan" title="https://web.facebook.com/schreiber.jan" class="fa">&#xf230;</a>
+                <br>
+                <br>&nbsp;
+                <br>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>

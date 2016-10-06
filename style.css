@@ -1,0 +1,171 @@
+body {
+	font-family: "Special Elite", monospace;
+	background-color: rgb(32, 32, 32);
+	color: rgb(239, 239, 239);
+	padding: 10px;
+}
+h1 {
+	text-align:center;
+	font-family:Monoton,sans-serif;
+	font-weight:normal;
+	font-size:3.5em;
+	color: #fff;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-animation: neon 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon 1.5s ease-in-out infinite alternate;
+	animation: neon 1.5s ease-in-out infinite alternate;
+}
+h2 {
+	font-family: Bangers,cursive;
+	font-weight: normal;
+	font-size: 2.2em;
+	text-align: center;
+	color: rgb(204,0,0);
+	text-shadow: 2px 2px 5px rgb(153,0,0);
+}
+h3 {
+	font-family: Bangers,cursive;
+	font-weight: normal;
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+}
+abbr {
+	text-decoration: none !important;
+	border: none !important;
+}
+a:link {
+	text-decoration: none;
+	color: royalblue;
+}
+a:visited {
+	text-decoration: none;
+	color: rgb(176,176,176);
+}
+a:hover {
+	text-decoration: underline;
+	color: gold;
+}
+nav a:link {
+	text-decoration: none;
+	color: rgb(200,200,200);
+}
+nav a:visited {
+	text-decoration: none;
+	color: rgb(200,200,200);
+}
+nav a:hover {
+	color: gold;
+}
+a[class="closebtn"]:hover {
+	color: rgb(200,200,200);
+}
+a[class="fa"] {
+	color:white;
+	font-size:3em;
+}
+a[class="fa"]:hover {
+	text-decoration:none;
+	color:gold;
+}
+.container {
+	margin: 0 auto;
+	max-width: 960px;
+}
+.col-md-4 {
+	text-align:center;
+}
+.thumbnail {
+	margin:0 auto;
+	border:2px solid black;
+	border-radius:0;
+}
+.list
+{
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+.list li
+{
+	padding-left: 18px;
+	background-image: url(http://fs5.directupload.net/images/151128/dwiqtzy5.gif);
+	background-repeat: no-repeat;
+	background-position: 0 1px;
+}
+/* The hamburger icon */
+#navicon {
+	color: rgb(239, 239, 239);
+    font-size: 18px;
+    width: 26px;
+    height: 26px;
+    padding-top: 4px;
+    padding-right: 6px;
+    z-index: 1; /* Stay on top */
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+/* The navigation menu */
+#navbar {
+    height: 0;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    top: 0;
+    left: 0;
+	font-family: Bangers,cursive;
+    font-size: 80%;
+    background-color: black;
+    overflow: hidden; /* Disable scroll bar */
+    padding-left: 5px;
+    padding-top: 5px;
+    transition: height 0.2s; /* 0.2 second transition effect to slide in the sidenav */
+}
+/* Position and style the close button (top right corner) */
+#navbar .closebtn {
+    position: absolute;
+    top: -1px;
+    right: 5px;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-left: 50px;
+}
+
+/* neon glow for the main heading */
+/* neon glow for webkit */
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(0,51,255), 0 0 70px rgb(0,51,255), 0 0 80px rgb(0,51,255), 0 0 100px rgb(0,51,255), 0 0 150px rgb(0,51,255);
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(0,51,255), 0 0 35px rgb(0,51,255), 0 0 40px rgb(0,51,255), 0 0 50px rgb(0,51,255), 0 0 75px rgb(0,51,255);
+  }
+}
+/* neon glow for Mozilla */
+@-moz-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(0,51,255), 0 0 70px rgb(0,51,255), 0 0 80px rgb(0,51,255), 0 0 100px rgb(0,51,255), 0 0 150px rgb(0,51,255);
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(0,51,255), 0 0 35px rgb(0,51,255), 0 0 40px rgb(0,51,255), 0 0 50px rgb(0,51,255), 0 0 75px rgb(0,51,255);
+  }
+}
+/* neon glow for modern browsers */
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(135,206,250), 0 0 40px rgb(0,51,255), 0 0 70px rgb(0,51,255), 0 0 80px rgb(0,51,255), 0 0 100px rgb(0,51,255), 0 0 150px rgb(0,51,255);
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(135,206,250), 0 0 20px rgb(0,51,255), 0 0 35px rgb(0,51,255), 0 0 40px rgb(0,51,255), 0 0 50px rgb(0,51,255), 0 0 75px rgb(0,51,255);
+  }
+}
+@media screen and (max-device-width:500px) {
+  h1 {
+    font-size:2.2em;
+  }
+}
