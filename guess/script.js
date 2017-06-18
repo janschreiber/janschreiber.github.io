@@ -49,8 +49,12 @@ function checkGuess() {
             lowOrHi.textContent = 'Last guess was too high!';
         }
     }
-    guessesLeft.textContent = 10-guessCount + ' guesses left';
-    guessCount++;
+    if (guessCount == 9) {
+        guessesLeft.textContent = 'One guess left!';
+    } else {
+        guessesLeft.textContent = 10 - guessCount + ' guesses left';
+    }
+    guessCount += 1;
     guessField.value = '';
     guessField.focus();
 }
