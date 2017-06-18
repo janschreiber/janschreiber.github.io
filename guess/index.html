@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess a Number!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+
+<body onload="resetGame(true)">
+    <p>Guess a number between 1 and 100!</p>
+    <div class="form">
+        <label for="guessField">Your guess: </label>
+        <input type="text" id="guessField" class="guessField" placeholder="42">
+        <input type="submit" value="Submit" class="guessSubmit" onclick="checkGuess()">
+    </div>
+
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+        <p class="guessesLeft">10 trials left.</p>
+    </div>
+    <button type="button" id="restartBtn" onclick="resetGame()">Start new game</button>
+</body>
+
+</html>
