@@ -22,6 +22,7 @@ function checkGuess() {
     var userGuess = parseInt(guessField.value, 10);
     if (validateInput(userGuess) === false) {
         guessField.value = '';
+        guessField.focus();
         return;
     }
     if (guessCount === 1) {
